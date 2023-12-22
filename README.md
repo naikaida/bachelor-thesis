@@ -12,5 +12,5 @@ this applicative test, not only is the quality of the models further measured, b
 also the investigation is carried out to determine whether a trained DDPM can
 perform in a continual learning environment.
 
-###Intuition: 
+### Intuition: 
 Taking DDPM and training them to synthesize time series data.
