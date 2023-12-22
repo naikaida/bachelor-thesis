@@ -1,0 +1,18 @@
+\chapter{Application}
+\label{sec:application}
+\section{Anonymization}
+\label{sec:anonym}
+An application that can be derived from our experiments, especially the openmeter experiments described in sections \ref{subsec:openemter} and \ref{subsec:OM res}, is anonymization. The openmeter dataset contains one categorical feature for each sensor - the sensor ID. This ID is already an unspecific unique ID but can still point to a specific sensor located in a specific household. Through the experiments, it was shown that this ID is not important for the task of generating synthetic data. Authentic samples can be generated using more general features during training/sampling.
+
+It has been demonstrated that the same principle would likely apply to the LSM experiments, which completely rely on unique IDs since there were no other features to work with.
+Training models and then performing state 
+estimations or different forecasting tasks and publishing these models to the public seems to evade the problems that might arise with privacy issues. Openmeter itself solves this problem by giving the people the opportunity to upload their data by themselves so they give personal consent. 
+Future energy supplier might consider opening their data to science, energy applications or the public in general by providing a well trained generative model.
+
+\section{State estimations and other simulations}
+\label{sec:state estem}
+During this thesis some of the generated data were used in experiments. Those experiments and evaluations are at the moment of this thesis still ongoing so there is no way of refer to actual results but there is applicable value that will be addressed. This goes not only hand in hand with the anonymization described in the section above but also takes scientific value into account. Generative models can be used to have an easily callable generator that supplies different kinds of complex simulations with the necessary input data. In this case electrical network state estimator were supplied with generated data. Exemplary this data was used to prototype certain situations that couldn't be easily or cheaply recreated with real world data. The model gave a flexible alternative.
+
+\section{Continual learning support models}
+\label{sec:apply cl}
+One of the mayor research questions that concerns various data scientist and will be discussed in this thesis is the question of continual learning. During the evaluation phase of the ACN data samples described in \ref{subsec:ACN res}  an introduction of a continual learning setup as a applicative test was made. In this case, the models were used as CL tools, but the presented generated models themselves could be  embedded in continual learning scenarios to further improve the result of those test. Such approaches can be found in \cite{shin2017continual}. In the future this can be seen as method to save time and resources since it is not necessary to rely on an entire dataset but rather a generator structure that compressed the information of such dataset.
