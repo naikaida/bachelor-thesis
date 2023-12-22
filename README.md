@@ -1,6 +1,7 @@
 # bachelor-thesis
 
 ## Time Series Denoising Diffusion Models and Continual Learning
+![noised time series](https://github.com/naikaida/bachelor-thesis/assets/44499467/08c9bdbc-b6de-41df-93bd-2dad1391248f)
 
 ### Abstract:
 This thesis focuses on exploring Denoising Diffusion Probabilistic Models (DDPM)
@@ -14,3 +15,6 @@ perform in a continual learning environment.
 
 ### Intuition: 
 Taking DDPM and training them to synthesize time series data.
+
+![lsm_dm_33](https://github.com/naikaida/bachelor-thesis/assets/44499467/3d7e73de-90fc-4293-a4c3-1b0fd1591631)
+
